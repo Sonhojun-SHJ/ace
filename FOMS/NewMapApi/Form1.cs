@@ -300,6 +300,12 @@ namespace NewMapApi
             day = dt.Day;
         }
 
+        private void btnLocation_Click(object sender, EventArgs e)
+        {
+            tbLat2.Text = gMapControl1.Position.Lat.ToString();
+            tbLng2.Text = gMapControl1.Position.Lng.ToString();
+        }
+
         private void cbToday_SelectedIndexChanged(object sender, EventArgs e)
         {
             gMapControl1.Overlays.Clear();

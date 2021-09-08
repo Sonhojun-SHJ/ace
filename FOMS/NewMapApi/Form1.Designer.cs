@@ -80,6 +80,7 @@ namespace NewMapApi
             this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnZoomP = new System.Windows.Forms.Button();
             this.btnZoomM = new System.Windows.Forms.Button();
+            this.btnLocation = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // gMapControl1
@@ -460,9 +461,9 @@ namespace NewMapApi
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(888, 382);
+            this.dateTimePicker2.Location = new System.Drawing.Point(922, 382);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 21);
+            this.dateTimePicker2.Size = new System.Drawing.Size(166, 21);
             this.dateTimePicker2.TabIndex = 25;
             this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
@@ -502,9 +503,9 @@ namespace NewMapApi
             // 
             // btnFuture
             // 
-            this.btnFuture.Location = new System.Drawing.Point(888, 407);
+            this.btnFuture.Location = new System.Drawing.Point(922, 407);
             this.btnFuture.Name = "btnFuture";
-            this.btnFuture.Size = new System.Drawing.Size(353, 23);
+            this.btnFuture.Size = new System.Drawing.Size(319, 23);
             this.btnFuture.TabIndex = 27;
             this.btnFuture.Text = "예측 데이터 조회";
             this.btnFuture.UseVisualStyleBackColor = true;
@@ -571,11 +572,22 @@ namespace NewMapApi
             this.btnZoomM.UseVisualStyleBackColor = true;
             this.btnZoomM.Click += new System.EventHandler(this.btnZoomM_Click);
             // 
+            // btnLocation
+            // 
+            this.btnLocation.Location = new System.Drawing.Point(872, 379);
+            this.btnLocation.Name = "btnLocation";
+            this.btnLocation.Size = new System.Drawing.Size(44, 51);
+            this.btnLocation.TabIndex = 30;
+            this.btnLocation.Text = "현재\r\n위치";
+            this.btnLocation.UseVisualStyleBackColor = true;
+            this.btnLocation.Click += new System.EventHandler(this.btnLocation_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1253, 572);
+            this.Controls.Add(this.btnLocation);
             this.Controls.Add(this.btnZoomM);
             this.Controls.Add(this.btnZoomP);
             this.Controls.Add(this.lvFuture);
@@ -670,6 +682,7 @@ namespace NewMapApi
         private System.Windows.Forms.ColumnHeader columnHeader18;
         private System.Windows.Forms.Button btnZoomP;
         private System.Windows.Forms.Button btnZoomM;
+        private System.Windows.Forms.Button btnLocation;
     }
 }
 
