@@ -439,13 +439,19 @@ namespace NewMapApi
                     if (month >= 1 && month <= 9)
                     {
                         monthstring = "0" + month.ToString();
+                    } else
+                    {
+                        monthstring = month.ToString();
                     }
 
                     if (day >= 1 && day <= 9)
                     {
                         daystring = "0" + day.ToString();
                     }
-
+                    else
+                    {
+                        daystring = day.ToString();
+                    }
                     if (date.Equals(year.ToString() + monthstring + daystring))
                     {
                         if (hour == cbFuture.Text)
